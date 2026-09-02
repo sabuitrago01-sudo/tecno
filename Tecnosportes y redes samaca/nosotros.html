@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Tecnosoportes y Redes Samacá</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* BARRA DE NAVEGACIÓN IDÉNTICA */
+        header {
+            background: #002855;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-nav img {
+            height: 48px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .menu-navegacion {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .menu-navegacion a {
+            color: #e0f2fe;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .menu-navegacion a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #00b4d8;
+        }
+
+        .menu-navegacion a.activo {
+            background: #00b4d8;
+            color: white;
+        }
+
+        .btn-volver {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .contenedor {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #002855;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.5rem;
+        }
+
+        .card-nosotros {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        .card-nosotros h2 {
+            color: #002855;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        .card-nosotros p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.6rem;
+        }
+
+        .grid-valores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card-valor {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #00b4d8;
+        }
+
+        .card-valor h3 {
+            color: #002855;
+            margin-bottom: 10px;
+        }
+
+        .card-valor p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.6rem;
+        }
+
+        footer {
+            background: #001d3d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ PRINCIPAL -->
+    <header>
+        <nav>
+            <div class="logo-nav">
+                <img src="logo de empresa.jpeg" alt="Tecnosoportes y Redes Samacá">
+            </div>
+            <ul class="menu-navegacion">
+                <li><a href="index.html" class="btn-volver">← Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html" class="activo">Sobre Nosotros</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO SOBRE NOSOTROS -->
+    <main class="contenedor">
+        <h1 class="titulo-seccion">Conoce Nuestra Empresa</h1>
+        <p class="subtitulo">Impulsamos el desarrollo tecnológico de empresas y hogares en Samacá y Boyacá.</p>
+
+        <div class="card-nosotros">
+            <h2>¿Quiénes Somos?</h2>
+            <p><strong>Tecnosoportes y Redes Samacá S.A.S.</strong> es una empresa especializada en brindar soluciones integrales de tecnología, conectividad e infraestructura de comunicaciones. Nos enfocamos en garantizar que la tecnología de nuestros clientes funcione de manera eficiente, segura y sin interrupciones.</p>
+        </div>
+
+        <div class="grid-valores">
+            <div class="card-valor">
+                <h3>Nuestra Misión</h3>
+                <p>Proveer servicios de mantenimiento técnico, implementación de redes y soporte especializado con altos estándares de calidad, adaptados a las necesidades reales de la región.</p>
+            </div>
+
+            <div class="card-valor">
+                <h3>Nuestra Visión</h3>
+                <p>Ser reconocidos como el aliado tecnológico líder en Boyacá por la confiabilidad, innovación y la rapidez de respuesta en cada uno de nuestros proyectos.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tecnosoportes y Redes Samacá S.A.S. — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
